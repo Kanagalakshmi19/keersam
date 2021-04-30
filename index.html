@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form validation</title>
+  <link rel="stylesheet" href="css\sim.css">
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  var y = document.myForm.regno.value;
+  var a = document.myForm.DOB.value;
+  var b = document.myForm.dept.value;
+  var c = document.myForm.year.value;
+  var d = document.myForm.add.value;
+  if (x == "") {
+    alert("form must fill");
+    return false;
+  }
+  else if(y == ""){
+alert("reg no should valid");
+return false;
+  }
+  else if(a == ""){
+alert("need Date of birth");
+return false;
+  }
+  else if(b == ""){
+alert("specify dept");
+return false;
+  }
+  else if(c == ""){
+alert("mention your year");
+return false;
+  }
+  else if(d == ""){
+alert("add for contact");
+return false;
+  }
+}
+</script>
+</head>
+<body>
+<img src="22.jpg" width="1355px" height="520px">
+<form name="myForm"  onsubmit="return validateForm()" method="get">
+ <p3> <h1><center>FORM VALIDATION</center></h1>
+ <p1><b><center>NAME: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br><br>
+  REG NO:&nbsp;&nbsp;<input type="text" name="regno"><br><br><br>
+  DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="DOB"><br><br><br>
+  DEPT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dept"><br><br><br>
+  YEAR:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="year"><br><br><br>
+  ADD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="add"><br><br></center></b></p1>
+  
+<p><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit"></center></p></p3>
+</form>
+
+</body>
+</html>
